@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2833C4FD-415D-4DCE-AC48-CF07671BB8C5}</ProjectGuid>
+    <ProjectGuid>{775D6DAC-98BE-4A39-BA93-E2387ED24634}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ConvertFarJohnN</RootNamespace>
-    <AssemblyName>ConvertFarJohnN</AssemblyName>
+    <RootNamespace>PassByRefJohnN</RootNamespace>
+    <AssemblyName>PassByRefJohnN</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,16 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConvertFahrenheitForm.cs">
+    <Compile Include="PassByRefForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConvertFahrenheitForm.Designer.cs">
-      <DependentUpon>ConvertFahrenheitForm.cs</DependentUpon>
+    <Compile Include="PassByRefForm.Designer.cs">
+      <DependentUpon>PassByRefForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConvertFahrenheit.cs" />
+    <Compile Include="PassByRef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ConvertFahrenheitForm.resx">
-      <DependentUpon>ConvertFahrenheitForm.cs</DependentUpon>
+    <EmbeddedResource Include="PassByRefForm.resx">
+      <DependentUpon>PassByRefForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
