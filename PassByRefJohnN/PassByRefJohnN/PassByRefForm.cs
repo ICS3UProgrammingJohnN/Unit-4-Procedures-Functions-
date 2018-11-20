@@ -24,14 +24,18 @@ namespace PassByRefJohnN
             InitializeComponent();
         }
 
-        /*public void RoundDecimal(ref decimalNumber, double decimalPlaces)
+        public void RoundDecimal(ref double decimalNumber, double decimalPlaces)
         {
+            // Creating the formula to round a number
+            decimalNumber = decimalNumber * Math.Pow(10, decimalPlaces) + 0.5;
+            decimalNumber = Math.Truncate(decimalNumber);
+            decimalNumber = decimalNumber / Math.Pow(10, decimalPlaces);
+
+            // displaying the rounded number in a message box
+            MessageBox.Show("The rounded number is " + decimalNumber);
 
 
-
-
-
-        }*/
+        }
 
         private void btnRound_Click(object sender, EventArgs e)
         {
@@ -42,11 +46,8 @@ namespace PassByRefJohnN
             decimalNumber = double.Parse(txtDecimalNumber.Text);
             decimalPlaces = double.Parse(numDecimalPlaces.Text);
 
-            // 
-            roundedNumber = decimalNumber * Math.Pow(10, decimalPlaces) + 0.5;
-            roundedNumber = Math.Truncate(roundedNumber);
-
-            MessageBox.Show("The rounded number is " + roundedNumber);
+            // calling the function
+            this.RoundDecimal(ref decimalNumber, decimalPlaces);
         }
     }
 }
