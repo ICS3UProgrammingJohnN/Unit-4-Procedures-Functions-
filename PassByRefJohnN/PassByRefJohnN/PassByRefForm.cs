@@ -40,7 +40,7 @@ namespace PassByRefJohnN
         private void btnRound_Click(object sender, EventArgs e)
         {
             // declare variables 
-            double decimalNumber, decimalPlaces, roundedNumber;
+            double decimalNumber, decimalPlaces;
 
             // getting string and converting to double 
             decimalNumber = double.Parse(txtDecimalNumber.Text);
