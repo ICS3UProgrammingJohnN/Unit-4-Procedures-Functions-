@@ -22,8 +22,22 @@ namespace StringEqualityJohnN
 
         }
 
+        private bool StringsAreEqual (string string1, string string2)
+        {
+            // 
+        }
+
         private void btnCheck_Click(object sender, EventArgs e)
         {
+            // declare variables
+            string userString1, userString2;
+
+            // 
+            userString1 = txtString1.Text;
+            userString2 = txtString2.Text;
+
+
+            this.StringsAreEqual(userString1, userString2);
 
         }
     }

@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtString1 = new System.Windows.Forms.TextBox();
+            this.txtString2 = new System.Windows.Forms.TextBox();
             this.lblString1 = new System.Windows.Forms.Label();
             this.lblString2 = new System.Windows.Forms.Label();
             this.lblInstruct = new System.Windows.Forms.Label();
             this.btnCheck = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtString1
             // 
-            this.textBox1.Location = new System.Drawing.Point(99, 109);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtString1.Location = new System.Drawing.Point(99, 109);
+            this.txtString1.Name = "txtString1";
+            this.txtString1.Size = new System.Drawing.Size(164, 20);
+            this.txtString1.TabIndex = 0;
+            this.txtString1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtString2
             // 
-            this.textBox2.Location = new System.Drawing.Point(99, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtString2.Location = new System.Drawing.Point(99, 177);
+            this.txtString2.Name = "txtString2";
+            this.txtString2.Size = new System.Drawing.Size(164, 20);
+            this.txtString2.TabIndex = 1;
             // 
             // lblString1
             // 
@@ -101,8 +101,8 @@
             this.Controls.Add(this.lblInstruct);
             this.Controls.Add(this.lblString2);
             this.Controls.Add(this.lblString1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtString2);
+            this.Controls.Add(this.txtString1);
             this.Name = "frmStringEquality";
             this.Text = "String Equality";
             this.ResumeLayout(false);
@@ -112,8 +112,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtString1;
+        private System.Windows.Forms.TextBox txtString2;
         private System.Windows.Forms.Label lblString1;
         private System.Windows.Forms.Label lblString2;
         private System.Windows.Forms.Label lblInstruct;
