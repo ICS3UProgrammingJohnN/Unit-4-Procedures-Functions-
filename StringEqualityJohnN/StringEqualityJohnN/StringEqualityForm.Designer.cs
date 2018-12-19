@@ -34,21 +34,24 @@
             this.lblString2 = new System.Windows.Forms.Label();
             this.lblInstruct = new System.Windows.Forms.Label();
             this.btnCheck = new System.Windows.Forms.Button();
+            this.lblAnswer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtString1
             // 
-            this.txtString1.Location = new System.Drawing.Point(99, 109);
+            this.txtString1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtString1.Location = new System.Drawing.Point(99, 100);
             this.txtString1.Name = "txtString1";
-            this.txtString1.Size = new System.Drawing.Size(164, 20);
+            this.txtString1.Size = new System.Drawing.Size(164, 33);
             this.txtString1.TabIndex = 0;
             this.txtString1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtString2
             // 
-            this.txtString2.Location = new System.Drawing.Point(99, 177);
+            this.txtString2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtString2.Location = new System.Drawing.Point(99, 168);
             this.txtString2.Name = "txtString2";
-            this.txtString2.Size = new System.Drawing.Size(164, 20);
+            this.txtString2.Size = new System.Drawing.Size(164, 33);
             this.txtString2.TabIndex = 1;
             // 
             // lblString1
@@ -92,11 +95,21 @@
             this.btnCheck.UseVisualStyleBackColor = true;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
+            // lblAnswer
+            // 
+            this.lblAnswer.AutoSize = true;
+            this.lblAnswer.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnswer.Location = new System.Drawing.Point(12, 288);
+            this.lblAnswer.Name = "lblAnswer";
+            this.lblAnswer.Size = new System.Drawing.Size(0, 26);
+            this.lblAnswer.TabIndex = 6;
+            // 
             // frmStringEquality
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 282);
+            this.ClientSize = new System.Drawing.Size(312, 323);
+            this.Controls.Add(this.lblAnswer);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.lblInstruct);
             this.Controls.Add(this.lblString2);
@@ -118,6 +131,7 @@
         private System.Windows.Forms.Label lblString2;
         private System.Windows.Forms.Label lblInstruct;
         private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Label lblAnswer;
     }
 }
 
